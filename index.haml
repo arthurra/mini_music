@@ -1,0 +1,27 @@
+!!!5
+%head
+  %title Mini Music Player
+
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+  %script{:src => "js/mediaelement-and-player.min.js"}
+  %link{:href => "css/style.css", :rel => "stylesheet"}
+
+%body
+  .audio-player
+    .track-info
+      %h1 Track Title
+      %h2 Artist
+      %h2 Album
+    .controls
+      %audio{:id => "audio-player", :src => "demo.mp3", :type => "audio/mp3", :controls => "controls"}
+  
+  :javascript
+    $(document).ready(function() {
+        $('#audio-player').mediaelementplayer({
+            alwaysShowControls: true,
+            features: ['playpause','volume','progress'],
+            audioVolume: 'horizontal',
+            audioWidth: 400,
+            audioHeight: 120
+        });
+    });
