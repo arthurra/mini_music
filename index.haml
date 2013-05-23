@@ -9,11 +9,12 @@
 %body
   .audio-player
     .track-info
+      %img.cover{:src => "cover.png", :alt => "cover"}
       %h1 Track Title
       %h2 Artist
       %h2 Album
     .controls
-      %audio{:id => "audio-player", :src => "demo.mp3", :type => "audio/mp3", :controls => "controls"}
+      %audio{:id => "audio-player", :src => "New_Fang.mp3", :type => "audio/mp3", :controls => "controls"}
   
   :javascript
     $(document).ready(function() {
