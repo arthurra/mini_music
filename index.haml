@@ -5,15 +5,17 @@
   %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
   %script{:src => "js/mediaelement-and-player.min.js"}
   %link{:href => "css/style.css", :rel => "stylesheet"}
+  %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet", :type => "text/css"}
 
 %body
   .audio-player
-    .track-info
-      %img.cover{:src => "cover.png", :alt => "cover"}
-      %h1 Track Title
-      %h2 Artist
-      %h2 Album
-    .controls
+    .audio__track-info.l-overlay
+      %h1.track-info__track-title New Fang
+      %h2.track-info__track-artist.l-inline Them Crooked Vultures
+      %h2.track-info__dash.l-inline -
+      %h2.track-info__track-album.l-inline Them Crooked Vultures
+    %img.audio__ablum-cover{:src => "cover.png", :alt => "cover"}
+    .audio__controls
       %audio{:id => "audio-player", :src => "New_Fang.mp3", :type => "audio/mp3", :controls => "controls"}
   
   :javascript
@@ -22,7 +24,7 @@
             alwaysShowControls: true,
             features: ['playpause','volume','progress'],
             audioVolume: 'horizontal',
-            audioWidth: 400,
-            audioHeight: 120
+            audioWidth: 300,
+            audioHeight: 300
         });
     });

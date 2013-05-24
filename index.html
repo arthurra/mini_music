@@ -4,16 +4,18 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
   <script src='js/mediaelement-and-player.min.js'></script>
   <link href='css/style.css' rel='stylesheet'>
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet" type='text/css'>
 </head>
 <body>
   <div class='audio-player'>
-    <div class='track-info'>
-      <img alt='cover' class='cover' src='cover.png'>
-      <h1>Track Title</h1>
-      <h2>Artist</h2>
-      <h2>Album</h2>
+    <div class='audio__track-info l-overlay'>
+      <h1 class='track-info__track-title'>New Fang</h1>
+      <h2 class='track-info__track-artist l-inline'>Them Crooked Vultures</h2>
+      <h2 class='track-info__dash l-inline'>-</h2>
+      <h2 class='track-info__track-album l-inline'>Them Crooked Vultures</h2>
     </div>
-    <div class='controls'>
+    <img alt='cover' class='audio__ablum-cover' src='cover.png'>
+    <div class='audio__controls'>
       <audio controls='controls' id='audio-player' src='New_Fang.mp3' type='audio/mp3'></audio>
     </div>
   </div>
@@ -23,8 +25,8 @@
             alwaysShowControls: true,
             features: ['playpause','volume','progress'],
             audioVolume: 'horizontal',
-            audioWidth: 400,
-            audioHeight: 120
+            audioWidth: 300,
+            audioHeight: 300
         });
     });
   </script>
