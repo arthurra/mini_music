@@ -83,7 +83,7 @@ html {
 .mejs-controls .mejs-play button,
 .mejs-controls .mejs-pause button {
   width: 50px;
-  height: 52px;
+  height: 50px;
   top: 8px;
   left: 200px;
   background: transparent url(../images/play.png) 0 0;
@@ -92,7 +92,7 @@ html {
 
 .mejs-controls .mejs-pause button {
   background: transparent url(../images/pause.png) 0 0;
-  background-position: 0 -51px;
+  background-position: 0 -50px;
   background-size: 100%; }
 
 .mejs-controls .mejs-mute button,
@@ -110,6 +110,7 @@ html {
 
 .controls__next-button button,
 .controls__prev-button button {
+  cursor: pointer;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -138,7 +139,7 @@ html {
 .toggle__fav-button button {
   width: 15px;
   height: 12px;
-  top: 17px;
+  top: 15px;
   left: 20px;
   background: transparent url(../images/fav.png) 0 0; }
   .toggle__fav-button button.active {
@@ -147,7 +148,7 @@ html {
 .toggle__repeat-button button {
   width: 20px;
   height: 12px;
-  top: 17px;
+  top: 15px;
   left: 60px;
   background: transparent url(../images/repeat.png) 0 0; }
   .toggle__repeat-button button.active {
@@ -156,7 +157,7 @@ html {
 .toggle__shuffle-button button {
   width: 15px;
   height: 14px;
-  top: 17px;
+  top: 15px;
   left: 105px;
   background: transparent url(../images/shuffle.png) 0 0; }
   .toggle__shuffle-button button.active {
