@@ -72,7 +72,7 @@ html {
   top: 0;
   background: #3c3c3c;
   border-radius: 0 0 5px 5px;
-  -webkit-transition: top 0.5s; }
+  -webkit-transition: top 0.3s; }
 
 .mejs-controls .mejs-button button {
   cursor: pointer;
@@ -82,25 +82,118 @@ html {
 
 .mejs-controls .mejs-play button,
 .mejs-controls .mejs-pause button {
-  width: 21px;
-  height: 21px;
-  top: 35px;
-  left: 135px;
-  background: transparent url(../img/play-pause.png) 0 0; }
+  width: 50px;
+  height: 52px;
+  top: 8px;
+  left: 200px;
+  background: transparent url(../images/play.png) 0 0;
+  background-size: 100%;
+  background-position: 0 0px; }
 
 .mejs-controls .mejs-pause button {
-  background-position: 0 -21px; }
+  background: transparent url(../images/pause.png) 0 0;
+  background-position: 0 -51px;
+  background-size: 100%; }
 
 .mejs-controls .mejs-mute button,
 .mejs-controls .mejs-unmute button {
-  width: 14px;
-  height: 12px;
-  top: 70px;
-  left: 140px;
-  background: transparent url(../img/mute-unmute.png) 0 0; }
+  width: 20px;
+  height: 17px;
+  top: 40px;
+  left: 20px;
+  background: transparent url(../images/vol.png) 0 0;
+  background-size: 100%;
+  background-position: 0 -17px; }
 
 .mejs-controls .mejs-unmute button {
-  background-position: 0 -12px; }
+  background-position: 0 0px; }
+
+.controls__next-button button,
+.controls__prev-button button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: 100% !important; }
+  .controls__next-button button:active,
+  .controls__prev-button button:active {
+    background-position: 0 -20px; }
+
+.controls__prev-button button {
+  background: transparent url(../images/prev.png) 0 0;
+  top: 24px;
+  left: 165px; }
+
+.controls__next-button button {
+  background: transparent url(../images/next.png) 0 0;
+  top: 24px;
+  left: 265px; }
+
+.toggle__fav-button button,
+.toggle__repeat-button button,
+.toggle__shuffle-button button {
+  cursor: pointer;
+  position: absolute;
+  background-size: 100% !important; }
+
+.toggle__fav-button button {
+  width: 15px;
+  height: 12px;
+  top: 17px;
+  left: 20px;
+  background: transparent url(../images/fav.png) 0 0; }
+  .toggle__fav-button button.active {
+    background-position: 0 -12px; }
+
+.toggle__repeat-button button {
+  width: 20px;
+  height: 12px;
+  top: 17px;
+  left: 60px;
+  background: transparent url(../images/repeat.png) 0 0; }
+  .toggle__repeat-button button.active {
+    background-position: 0 -12px; }
+
+.toggle__shuffle-button button {
+  width: 15px;
+  height: 14px;
+  top: 17px;
+  left: 105px;
+  background: transparent url(../images/shuffle.png) 0 0; }
+  .toggle__shuffle-button button.active {
+    background-position: 0 -14px; }
+
+.mejs-controls div.mejs-horizontal-volume-slider {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  cursor: pointer; }
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  width: 75px;
+  height: 5px;
+  background: #212227;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.25);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  top: 1px;
+  left: 1px;
+  background: #fc9259;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+.mejs-controls .mejs-time-rail .mejs-time-float,
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+  display: none; }
 
 .mejs-controls div.mejs-time-rail {
   width: 300px;

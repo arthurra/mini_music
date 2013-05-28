@@ -6,6 +6,7 @@
   %script{:src => "js/mediaelement-and-player.min.js"}
   %link{:href => "css/style.css", :rel => "stylesheet"}
   %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet", :type => "text/css"}
+  %script{:src => "js/toggle.js"}
 
 %body
   .audio-player.l-centered
@@ -17,6 +18,16 @@
     %img.audio__ablum-cover{:src => "cover.png", :alt => "cover"}
     .audio__controls
       %audio{:id => "audio-player", :src => "New_Fang.mp3", :type => "audio/mp3", :controls => "controls"}
+      .controls__next-button
+        %button
+      .controls__prev-button
+        %button
+      .toggle__fav-button
+        %button
+      .toggle__repeat-button
+        %button
+      .toggle__shuffle-button
+        %button
   
   :javascript
     $(document).ready(function() {
